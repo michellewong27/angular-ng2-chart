@@ -12,7 +12,7 @@ export class LineChartComponent {
 
   //({ data: SingleDataSet, label: string }[]) – data see about, the label for the dataset which appears in the legend and tooltips
   lineChartData: ChartDataSets[] = [
-    //set of points of the chart, it should be MultiDataSet only for line, bar, radar and doughnut, otherwise SingleDataSet
+    //set of points on chart
     { data: [73, 70, 78, 76, 77, 82], label: 'Temperature' },
   ];
 
@@ -29,14 +29,14 @@ export class LineChartComponent {
     {
       borderColor: 'black',
       backgroundColor: 'rgba(255,255,0,0.28)',
-    },
+    }
   ];
 
   // if true show legend below the chart, otherwise not be shown
   lineChartLegend = true;
 
   lineChartPlugins = [];
-  
+
   //indicates the type of chart
   lineChartType: ChartType = 'line';
   
